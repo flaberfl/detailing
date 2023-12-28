@@ -251,6 +251,20 @@
   /* .related-services__item */
   &__item {
     position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      // border-radius: 655px;
+      background: radial-gradient(72.9% 72.9% at 35.19% 35.11%, rgba(139, 77, 255, 0.59) 0%, rgba(41, 132, 235, 0.59) 100%);
+      filter: blur(150px);
+      width: toRem(655);
+      height: toRem(353);
+      z-index: -1;
+    }
   }
 
   /* .related-services__image */
@@ -275,5 +289,9 @@
 
     background: #0A0A19 url('@img/services/back2.svg') center center no-repeat;
     background-size: cover;
+
+    .related-services__item_2 & {
+      top: 0;
+    }
   }
 }
