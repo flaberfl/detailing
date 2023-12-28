@@ -1,4 +1,5 @@
 .services {
+  padding-top: toRem(177);
 
   /* .services__container */
   &__container {}
@@ -20,10 +21,18 @@
 .items-services {}
 
 .item-services {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: toRem(107);
   align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('@img/services/blur-dec.svg') 0 0 no-repeat;
+
+  }
 
   /* .item-services__image */
   &__image {
@@ -107,24 +116,90 @@
 
   /* .item-services__title */
   &__title {
+    margin-bottom: toRem(19);
+
     font-size: 30px;
     line-height: normal;
     letter-spacing: 1.5px;
+
+    .item-services__content_3 & {
+      letter-spacing: normal;
+    }
   }
 
   /* .item-services__subtitle */
   &__subtitle {
+    margin-bottom: toRem(66);
+
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.9px;
   }
 
   /* .item-services__work */
-  &__work {}
+  &__work {
+    position: relative;
+    max-width: toRem(495);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: toRem(33);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+
+    .item-services__content_3 & {
+      max-width: toRem(538);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: toRem(7);
+      height: toRem(7);
+      background-color: #fff;
+      border-radius: 50%;
+      left: 0;
+    }
+
+    span {
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.9px;
+    }
+  }
 
   /* .item-services__consultation */
-  &__consultation {}
+  &__consultation {
+    display: flex;
+    align-items: center;
+    gap: toRem(17);
+    margin-top: toRem(52);
+    margin-bottom: toRem(28);
+
+    color: #2CD996;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-decoration-line: underline;
+  }
 
   /* .item-services__callback */
-  &__callback {}
+  &__callback {
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+
+    a {
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.9px;
+    }
+  }
 }
