@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Монтаж Сервис"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="intro" data-prlx-parent>
+				<img class="intro__decor" data-src="@img/decor/01.svg" alt="">
+				<div class="intro__container">
+
+					<div class="intro__content">
+						<h1 class="intro__title title-h1" data-watch anim-up-down>
+							Detailing 4 Seasons
+						</h1>
+						<h2 class="intro__subtitle" data-watch anim-up-down delay20>
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="39" viewBox="0 0 38 39" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M31.5245 1.83091L30.6089 3.69699L28.7229 4.65609L26.8369 5.61519L28.7161 6.57383L30.5954 7.53246L31.5256 9.43421L32.4559 11.3359L33.3983 9.41592L34.3407 7.49588L36.1738 6.5638C37.182 6.05108 37.9913 5.60654 37.972 5.57578C37.9529 5.54509 37.1278 5.10997 36.1385 4.60888L34.3399 3.69784L33.4449 1.8668C32.9527 0.859803 32.5252 0.0198564 32.4951 0.000342304C32.4649 -0.0192483 32.0282 0.804551 31.5245 1.83091ZM13.014 8.06462L10.411 13.3637L5.2055 16.0135L0 18.6633L5.22437 21.3244L10.4487 23.9855L13.0419 29.2738L15.6352 34.5622L18.2401 29.2624L20.8451 23.9627L26.04 21.3229L31.235 18.683L26.0352 16.0361L20.8354 13.3892L18.2262 8.0774L15.6169 2.76552L13.014 8.06462ZM17.064 12.9811L18.4551 15.8124L21.2547 17.2378L24.0544 18.6633L21.2422 20.0951L18.43 21.5269L17.0235 24.3897L15.6169 27.2525L14.2167 24.4024L12.8164 21.5524L10.0351 20.1363C8.50541 19.3575 7.25384 18.7032 7.25384 18.6824C7.25384 18.6616 8.50541 18.0073 10.0351 17.2285L12.8164 15.8124L14.2075 12.9811C14.9726 11.4239 15.6153 10.1498 15.6357 10.1498C15.6562 10.1498 16.2989 11.4239 17.064 12.9811ZM29.6364 26.8707L28.4531 29.2815L26.085 30.4861C24.7826 31.1486 23.7169 31.7084 23.7169 31.7301C23.7169 31.7517 24.7826 32.3115 26.085 32.9741L28.4531 34.1786L29.6364 36.5894C30.2873 37.9152 30.8372 39 30.8585 39C30.8797 39 31.4296 37.9152 32.0805 36.5894L33.2638 34.1786L35.6319 32.9741C36.9343 32.3115 38 31.7517 38 31.7301C38 31.7084 36.9343 31.1486 35.6319 30.4861L33.2638 29.2815L32.0805 26.8707C31.4296 25.5449 30.8797 24.4601 30.8585 24.4601C30.8372 24.4601 30.2873 25.5449 29.6364 26.8707Z"
+									fill="white" />
+							</svg>
+							Регулярная забота <br> о Вашем автомобиле
+						</h2>
+
+						<button type="submit" class="intro__button button">Записаться
+							<span><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z"
+										fill="#00AD90" />
+								</svg>
+							</span>
+						</button>
+
+						<div class="intro__social-list">
+							<span>Написать мастеру</span>
+							<div class="intro__social-links">
+								<a href="" class="intro__social-link">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M6.6026 0.0556105C5.71788 0.165422 5.00989 0.377971 4.19964 0.777082C2.66843 1.53138 1.48379 2.72434 0.745286 4.25579C-0.269269 6.35979 -0.247271 8.7178 0.806864 10.851L1.06306 11.3695L0.568952 13.1716C0.297164 14.1628 0.0798044 14.9786 0.0859388 14.9845C0.0920341 14.9904 0.483853 14.8934 0.956629 14.7689C1.42941 14.6444 2.25852 14.4265 2.79909 14.2846L3.78196 14.0265L4.22523 14.2383C6.33917 15.2481 8.66214 15.2541 10.7443 14.2551C14.4748 12.4653 16.0532 7.97819 14.2598 4.2615C13.5035 2.69417 12.3056 1.49609 10.7386 0.739684C9.45481 0.120012 8.00959 -0.119032 6.6026 0.0556105ZM5.5172 4.06501C5.55549 4.08553 5.62872 4.18518 5.6799 4.28651C5.85237 4.62782 6.32909 5.81996 6.32909 5.90988C6.32909 6.02301 6.16522 6.28155 5.90613 6.5773C5.79493 6.70423 5.70393 6.8462 5.70393 6.89282C5.70393 7.02647 6.14224 7.6572 6.49167 8.02646C6.91013 8.46859 7.38131 8.81761 7.9168 9.08209C8.47983 9.36014 8.53293 9.35955 8.79042 9.07224C8.90119 8.94864 9.06525 8.74758 9.15496 8.62542C9.37252 8.32924 9.44035 8.30102 9.70038 8.39833C10.0315 8.52221 11.2276 9.12199 11.2871 9.19393C11.3629 9.28565 11.3226 9.75948 11.2146 10.0471C11.0558 10.4697 10.4347 10.8994 9.86639 10.9799C9.07334 11.0923 7.46278 10.5336 6.50316 9.81325C5.3942 8.98084 4.21191 7.46216 3.89558 6.46374C3.77438 6.08116 3.77731 5.39849 3.90164 5.0569C4.06461 4.60918 4.48464 4.10323 4.75646 4.02714C4.91799 3.98197 5.40757 4.00635 5.5172 4.06501Z"
+											fill="#0A0A19" />
+									</svg>
+
+								</a>
+								<a href="" class="intro__social-link">
+
+									<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M15.6846 0.0527885C15.5749 0.0814648 12.1379 1.49494 8.04674 3.19386C2.9261 5.32027 0.552088 6.32391 0.428139 6.41466C-0.164125 6.84823 -0.139389 7.49191 0.486669 7.94022C0.666361 8.06889 0.894711 8.15919 1.80993 8.46345C2.4183 8.66568 3.22958 8.93571 3.61281 9.06344L4.30959 9.2957L4.97463 11.4288C5.3404 12.602 5.68008 13.6465 5.72948 13.75C5.83818 13.9776 6.00289 14.1672 6.16079 14.2464C6.33603 14.3342 6.62356 14.3212 6.82478 14.2163C6.91838 14.1675 7.45765 13.7095 8.02309 13.1985C8.58856 12.6876 9.06512 12.2696 9.08212 12.2696C9.09915 12.2696 9.86131 12.8364 10.7759 13.5293C11.6904 14.2222 12.4997 14.8195 12.5742 14.8567C12.9263 15.0324 13.3659 15.0476 13.7284 14.8964C13.9453 14.8059 14.2772 14.494 14.3733 14.2903C14.468 14.0898 16.9939 1.29762 16.9997 0.989838C17.0062 0.640204 16.9164 0.416273 16.6936 0.226048C16.4313 0.0022295 16.0974 -0.0550858 15.6846 0.0527885ZM13.768 2.80148C13.692 2.87891 12.2164 4.47526 10.4887 6.34894L7.34752 9.75569L6.77047 11.2472C6.41654 12.162 6.18378 12.7152 6.16857 12.6778C6.15494 12.6442 5.89318 11.8082 5.58695 10.8198C5.15583 9.42854 5.04056 9.01273 5.07632 8.9782C5.13679 8.91976 13.8656 2.66305 13.8885 2.66174C13.8981 2.66117 13.8439 2.72408 13.768 2.80148Z"
+											fill="#0A0A19" />
+									</svg>
+
+								</a>
+
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="intro__media">
+						<img src="@img/intro/01.png" alt="Автомобиль" class="intro__main-image">
+						<!-- <img src="@img/intro/01.png" alt="Автомобиль" class="intro__main-image" data-prlx data-direction="-1"
+							data-coefficient="250"> -->
+					</div>
+
+				</div>
+			</section>
+
+			<section class="about" data-prlx-parent>
+				<div class="about__container">
+					<div class="about__items">
+						<div class="about__item" data-watch anim-up-down>
+							<svg class="about__border" width="414" height="245" viewBox="0 0 414 245" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.499756" y="0.5" width="413" height="244" rx="35.5" stroke="url(#paint0_linear_1_72)" />
+								<defs>
+									<linearGradient id="paint0_linear_1_72" x1="361.907" y1="40.5395" x2="194.857" y2="224.324"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#BCC0CC" />
+										<stop offset="1" stop-color="#BCC0CC" stop-opacity="0" />
+									</linearGradient>
+								</defs>
+							</svg>
+
+							<div class="about__box">
+								<div class="about__icon about__icon_1">
+									<img src="@img/about/01.svg" alt="">
+								</div>
+								<p class="about__text"><span>1 год гарантия</span> на работы и оборудование </p>
+							</div>
+						</div>
+						<div class="about__item" data-watch anim-up-down delay30>
+							<svg class="about__border" width="414" height="245" viewBox="0 0 414 245" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.499756" y="0.5" width="413" height="244" rx="35.5" stroke="url(#paint0_linear_1_72)" />
+								<defs>
+									<linearGradient id="paint0_linear_1_72" x1="361.907" y1="40.5395" x2="194.857" y2="224.324"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#BCC0CC" />
+										<stop offset="1" stop-color="#BCC0CC" stop-opacity="0" />
+									</linearGradient>
+								</defs>
+							</svg>
+							<div class="about__box">
+								<div class="about__icon about__icon_2">
+									<img src="@img/about/02.svg" alt="">
+								</div>
+								<p class="about__text"><span>15 лет</span> успешной работы</p>
+							</div>
+						</div>
+						<div class="about__item" data-watch anim-up-down delay60>
+							<svg class="about__border" width="414" height="245" viewBox="0 0 414 245" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.499756" y="0.5" width="413" height="244" rx="35.5" stroke="url(#paint0_linear_1_72)" />
+								<defs>
+									<linearGradient id="paint0_linear_1_72" x1="361.907" y1="40.5395" x2="194.857" y2="224.324"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#BCC0CC" />
+										<stop offset="1" stop-color="#BCC0CC" stop-opacity="0" />
+									</linearGradient>
+								</defs>
+							</svg>
+							<div class="about__box">
+								<div class="about__icon about__icon_3">
+									<img src="@img/about/03.svg" alt="">
+								</div>
+								<p class="about__text"><span>Без предоплаты!</span> Оплата после пусконаладочных работ</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="about__wrapper">
+						<div class="about__media">
+							<img src="@img/about/image.png" alt="О компании" class="about__image" data-prlx data-direction="1"
+								data-coefficient="250">
+						</div>
+
+						<div class="about__content">
+							<h2 class="about__title title-h2" data-watch anim-up-down>О компании</h2>
+							<p class="about__text" data-watch anim-up-down delay10>
+								Более 15 лет обеспечиваем объекты бесперебойным электропитанием. Проектирование, установка и сдача в
+								эксплуатацию генераторов - основное направление нашей деятельности.
+							</p>
+							<ul class="about__list list-about">
+								<li class="list-about__item" data-watch anim-up-down delay10>
+									<div class="list-about__box">
+										<img src="@img/check.svg" alt="">
+										<div class="about__line list-line"></div>
+									</div>
+									<p class="list-about__text">Свое производство Кожухов и АВР</p>
+								</li>
+								<li class="list-about__item" data-watch anim-up-down delay20>
+									<div class="list-about__box">
+										<img src="@img/check.svg" alt="">
+										<div class="about__line list-line"></div>
+									</div>
+									<p class="list-about__text">Свой склад</p>
+								</li>
+								<li class="list-about__item" data-watch anim-up-down delay30>
+									<div class="list-about__box">
+										<img src="@img/check.svg" alt="">
+										<div class="about__line list-line"></div>
+									</div>
+									<p class="list-about__text">Своя служба доставки</p>
+								</li>
+								<li class="list-about__item" data-watch anim-up-down delay40>
+									<div class="list-about__box">
+										<img src="@img/check.svg" alt="">
+										<div class="about__line list-line"></div>
+									</div>
+									<p class="list-about__text">Свои монтажные бригады</p>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="about__images">
+						<img src="@img/about/about-tree-b.png" alt="Куст" class="about__img about__img_1" data-prlx
+							data-direction="-1" data-coefficient="200">
+						<img src="@img/about/about-tree.png" alt="Куст" class="about__img about__img_2" data-prlx data-direction="1"
+							data-coefficient="150">
+					</div>
+				</div>
+			</section>
+
+			<section class="types">
+				<div class="types__container">
+					<h3 class="types__title" data-watch anim-up-down>Поставка и монтаж всех видов генераторов</h3>
+					<div class="types__items">
+						<div class="types__item item-types" data-watch anim-up-down>
+							<div class="item-types__image">
+								<img data-src="@img/types/01.png" alt="Тип генератора">
+							</div>
+							<h5 class="item-types__title">бензиновые</h5>
+						</div>
+						<div class="types__item item-types" data-watch anim-up-down>
+							<div class="item-types__image">
+								<img data-src="@img/types/02.png" alt="Тип генератора">
+							</div>
+							<h5 class="item-types__title">Дизельные</h5>
+						</div>
+						<div class="types__item item-types" data-watch anim-up-down>
+							<div class="item-types__image">
+								<img data-src="@img/types/03.png" alt="Тип генератора">
+							</div>
+							<h5 class="item-types__title">Газовые</h5>
+						</div>
+						<div class="types__item item-types" data-watch anim-up-down>
+							<div class="item-types__image">
+								<img data-src="@img/types/04.png" alt="Тип генератора">
+							</div>
+							<h5 class="item-types__title">Генераторы с авр</h5>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="stages" data-prlx-parent>
+				<div class="stages__container">
+					<div class="stages__content">
+						<h2 class="stages__title title-h2" data-watch anim-up-down>
+							Обеспечение резервного электропитания <br> Вашего дома
+						</h2>
+						<ul class="stages__list">
+
+							<li class="stages__item" data-watch anim-up-down delay10>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Бесплатный выезд на объект для подбора мощности и определения места установки
+								</p>
+							</li>
+
+							<li class="stages__item" data-watch anim-up-down delay20>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Составление КП, в которое включаем: варианты генераторов, смету на
+									дополнительное оборудование и монтаж</p>
+							</li>
+							<li class="stages__item" data-watch anim-up-down delay30>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Согласование КП и выбор даты монтажа
+								</p>
+							</li>
+							<li class="stages__item" data-watch anim-up-down delay40>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Доставка оборудования</p>
+							</li>
+							<li class="stages__item" data-watch anim-up-down delay50>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Проведение работ: прокладка кабеля, установка блока автоматики, пусконаладочные
+									работы
+								</p>
+							</li>
+							<li class="stages__item" data-watch anim-up-down delay60>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Сдача объекта и инструктаж. Заполнение сопроводительных документов.
+								</p>
+							</li>
+							<li class="stages__item" data-watch anim-up-down delay70>
+								<div class="stages__box">
+									<div class="stages__number"></div>
+									<div class="stages__line list-line"></div>
+								</div>
+								<p class="stages__text">Оплата</p>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="stages__media">
+						<img data-src="@img/stages/01.png" alt="Этапы работы" class="stages__image" data-prlx data-direction="-1"
+							data-coefficient="250">
+					</div>
+				</div>
+			</section>
+
+			<section class="catalog">
+				<div class="catalog__container">
+					<h2 class="catalog__title title-h2" data-watch anim-up-down>Каталог готовых решений</h2>
+					<div data-tabs data-tabs-animate="1000" class="catalog__tabs">
+						<nav data-tabs-titles class="catalog__header" data-watch anim-up-down>
+							<button type="button" class="catalog__label">6 кВт в Кожухе GT 1200 winter</button>
+							<button type="button" class="catalog__label">7 кВт в Кожухе GT 1200 winter</button>
+							<button type="button" class="catalog__label">8 кВт в Кожухе GT 1200 winter</button>
+							<button type="button" class="catalog__label">10 кВт в Кожухе GT 1200 winter</button>
+						</nav>
+
+						<div data-tabs-body class="catalog__tabs-content" data-watch anim-up-down delay20>
+
+							<div class="catalog__tabs-body _catalog-body">
+								<div class="catalog__items _catalog-items">
+
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/02.png" alt="Генератор">
+											<span class="item-catalog__badge">HIT</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup-1" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/03.png" alt="Генератор">
+											<span class="item-catalog__badge">-10%</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/02.png" alt="Генератор">
+											<span class="item-catalog__badge">HIT</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/03.png" alt="Генератор">
+											<span class="item-catalog__badge">-10%</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+
+								</div>
+								<button data-showmore-button class="show-more button" type="button">
+									<span>Больше генераторов</span>
+									<span>Скрыть</span></button>
+							</div>
+							<div class="catalog__tabs-body _catalog-body">
+								<div class="catalog__items _catalog-items">
+
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/02.png" alt="Генератор">
+											<span class="item-catalog__badge">HIT</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/03.png" alt="Генератор">
+											<span class="item-catalog__badge">-10%</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+
+								</div>
+								<button data-showmore-button class="show-more button" type="button">
+									<span>Больше генераторов</span>
+									<span>Скрыть</span></button>
+							</div>
+							<div class="catalog__tabs-body _catalog-body">
+								<div class="catalog__items _catalog-items">
+
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/02.png" alt="Генератор">
+											<span class="item-catalog__badge">HIT</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/03.png" alt="Генератор">
+											<span class="item-catalog__badge">-10%</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+
+								</div>
+								<button data-showmore-button class="show-more button" type="button">
+									<span>Больше генераторов</span>
+									<span>Скрыть</span></button>
+							</div>
+							<div class="catalog__tabs-body _catalog-body">
+								<div class="catalog__items _catalog-items">
+
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/02.png" alt="Генератор">
+											<span class="item-catalog__badge">HIT</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/03.png" alt="Генератор">
+											<span class="item-catalog__badge">-10%</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/01.png" alt="Генератор">
+											<span class="item-catalog__badge">NEW</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/02.png" alt="Генератор">
+											<span class="item-catalog__badge">HIT</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+									<div class="catalog__item item-catalog _catalog-item hidden-content">
+										<div class="item-catalog__image">
+											<img data-src="@img/catalog/03.png" alt="Генератор">
+											<span class="item-catalog__badge">-10%</span>
+										</div>
+										<div class="item-catalog__content">
+											<h5 class="item-catalog__name">Elemax SH 7600 EX-RS</h5>
+											<div class="item-catalog__price"><span>219 000</span> ₽</div>
+										</div>
+										<button data-popup="#catalog-popup" type="button"
+											class="item-catalog__button button">Заказать</button>
+									</div>
+
+								</div>
+								<button data-showmore-button class="show-more button" type="button">
+									<span>Больше генераторов</span>
+									<span>Скрыть</span></button>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+			<section class="banner banner_1" data-prlx-parent>
+				<div class="banner__container">
+					<img class="banner__decor-img banner__decor-img_1" data-src="@img/catalog/decor-1.png" alt="" data-prlx
+						data-direction="-1" data-coefficient="200">
+					<img class="banner__decor-img banner__decor-img_2" data-src="@img/catalog/decor-2.png" alt="" data-prlx
+						data-direction="-1" data-coefficient="150">
+					<div class="banner__wrapper">
+						<div class="banner__body">
+							<div class="banner__text-block">
+								<h2 class="banner__title title-h2">Не нашли нужный вариант?</h2>
+								<h3 class="banner__subtitle subtitle-h2">
+									Оставьте телефон, подберем вариант для Вашего случая
+								</h3>
+							</div>
+							<button class="banner__button button" data-popup="#submit-popup">Оставить заявку</button>
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+
+
+			<section class="about-case" data-prlx-parent>
+				<div class="about-case__container">
+
+					<div class="about-case__media">
+						<div class="about-case__image">
+							<img data-src="@img/about-case/01.png" alt="Кожух генератора" data-prlx data-direction="-1"
+								data-coefficient="250">
+							<span class="about-case__badge">Более 20 вариантов кожухов в наличии</span>
+						</div>
+					</div>
+
+					<div class="about-case__content">
+
+						<h2 class="about-case__title title-h2" data-watch anim-up-down>Монтаж генератора <br> в кожухе это</h2>
+
+						<ul class="about-case__list list-about-case">
+
+							<li class="list-about-case__item" data-watch anim-up-down delay10>
+								<div class="list-about-case__box">
+									<img src="@img/check.svg" alt="">
+									<div class="about-case__line list-line"></div>
+								</div>
+								<p class="list-about-case__text">Работоспособность электростанции круглый год</p>
+							</li>
+							<li class="list-about-case__item" data-watch anim-up-down delay20>
+								<div class="list-about-case__box">
+									<img src="@img/check.svg" alt="">
+									<div class="about-case__line list-line"></div>
+								</div>
+								<p class="list-about-case__text">Высокий уровень шумоизоляции</p>
+							</li>
+							<li class="list-about-case__item" data-watch anim-up-down delay30>
+								<div class="list-about-case__box">
+									<img src="@img/check.svg" alt="">
+									<div class="about-case__line list-line"></div>
+								</div>
+								<p class="list-about-case__text">Сохранность оборудования от кражи</p>
+							</li>
+							<li class="list-about-case__item" data-watch anim-up-down delay40>
+								<div class="list-about-case__box">
+									<img src="@img/check.svg" alt="">
+									<div class="about-case__line list-line"></div>
+								</div>
+								<p class="list-about-case__text">Отвод выхлопных газов, вентиляция, охлаждение</p>
+							</li>
+							<li class="list-about-case__item" data-watch anim-up-down delay50>
+								<div class="list-about-case__box">
+									<img src="@img/check.svg" alt="">
+									<div class="about-case__line list-line"></div>
+								</div>
+								<p class="list-about-case__text">Защита от воздействий окружающей среды</p>
+							</li>
+
+						</ul>
+
+						<div class="about-case__slogan" data-da=".about-case__container, 992" data-watch anim-up-down>
+							<h4>Подберем кожух под Ваш генератор или поставим
+								одно из готовых решений в зависимости
+								от требуемой мощности </h4>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="catalog-cases">
+				<div class="catalog-cases__container _catalog-body">
+					<h2 class="catalog-cases__title title-h2" data-watch anim-up-down>Каталог кожухов</h2>
+					<h5 class="catalog-cases__subtitle" data-watch anim-up-down delay10>В стоимость включена услуга по забору
+						генератора и доставки кожуха с
+						генератором обратно</h5>
+					<ul class="catalog-cases__items _catalog-items" data-watch anim-up-down delay30>
+
+						<li class="catalog-cases__item item-catalog-cases _catalog-item hidden-content">
+							<div class="item-catalog-cases__image">
+								<img data-src="@img/catalog-cases/01.png" alt="Фото кожуха">
+								<span class="item-catalog-cases__badge">-10%</span>
+							</div>
+
+							<div class="item-catalog-cases__content">
+								<h5 class="item-catalog-cases__name">
+									Кожух GT 1200 winter
+								</h5>
+								<h5 class="item-catalog-cases__descr">
+									На любой 1-цилинровый генератор
+								</h5>
+								<div class="item-catalog-cases__price">
+									<span class="item-catalog-cases__old-price">
+										219 000 ₽</span>
+									<span class="item-catalog-cases__current-price">
+										110 000 ₽
+									</span>
+								</div>
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_mobile button"
+									data-popup="#order-popup">Заказать
+								</button>
+
+							</div>
+							<div class="item-catalog-cases__footer">
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_desk button"
+									data-popup="#order-popup">Заказать
+								</button>
+							</div>
+
+						</li>
+						<li class="catalog-cases__item item-catalog-cases _catalog-item hidden-content">
+							<div class="item-catalog-cases__image">
+								<img data-src="@img/catalog-cases/01.png" alt="Фото кожуха">
+								<span class="item-catalog-cases__badge">NEW</span>
+							</div>
+
+							<div class="item-catalog-cases__content">
+								<h5 class="item-catalog-cases__name">
+									Кожух GT 1200 winter
+								</h5>
+								<h5 class="item-catalog-cases__descr">
+									На любой 1-цилинровый генератор
+								</h5>
+								<div class="item-catalog-cases__price">
+									<!-- <span class="item-catalog-cases__old-price">
+										219 000 ₽</span> -->
+									<span class="item-catalog-cases__current-price">
+										110 000 ₽
+									</span>
+								</div>
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_mobile button"
+									data-popup="#order-popup">Заказать
+								</button>
+
+							</div>
+							<div class="item-catalog-cases__footer">
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_desk button"
+									data-popup="#order-popup">Заказать</button>
+							</div>
+						</li>
+						<li class="catalog-cases__item item-catalog-cases _catalog-item hidden-content">
+							<div class="item-catalog-cases__image">
+								<img data-src="@img/catalog-cases/01.png" alt="Фото кожуха">
+								<!-- <span class="item-catalog-cases__badge">-10%</span> -->
+							</div>
+
+							<div class="item-catalog-cases__content">
+								<h5 class="item-catalog-cases__name">
+									Кожух GT 1200 winter
+								</h5>
+								<h5 class="item-catalog-cases__descr">
+									На любой 1-цилинровый генератор
+								</h5>
+								<div class="item-catalog-cases__price">
+									<!-- <span class="item-catalog-cases__old-price">
+										219 000 ₽</span> -->
+									<span class="item-catalog-cases__current-price">
+										110 000 ₽
+									</span>
+								</div>
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_mobile button"
+									data-popup="#order-popup">Заказать
+								</button>
+
+							</div>
+							<div class="item-catalog-cases__footer">
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_desk button"
+									data-popup="#order-popup">Заказать</button>
+							</div>
+						</li>
+						<li class="catalog-cases__item item-catalog-cases _catalog-item hidden-content">
+							<div class="item-catalog-cases__image">
+								<img data-src="@img/catalog-cases/01.png" alt="Фото кожуха">
+								<!-- <span class="item-catalog-cases__badge">-10%</span> -->
+							</div>
+
+							<div class="item-catalog-cases__content">
+								<h5 class="item-catalog-cases__name">
+									Кожух GT 1200 winter
+								</h5>
+								<h5 class="item-catalog-cases__descr">
+									На любой 1-цилинровый генератор
+								</h5>
+								<div class="item-catalog-cases__price">
+									<!-- <span class="item-catalog-cases__old-price">
+										219 000 ₽</span> -->
+									<span class="item-catalog-cases__current-price">
+										110 000 ₽
+									</span>
+								</div>
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_mobile button"
+									data-popup="#order-popup">Заказать
+								</button>
+
+							</div>
+							<div class="item-catalog-cases__footer">
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_desk button"
+									data-popup="#order-popup">Заказать</button>
+							</div>
+						</li>
+						<li class="catalog-cases__item item-catalog-cases _catalog-item hidden-content">
+							<div class="item-catalog-cases__image">
+								<img data-src="@img/catalog-cases/01.png" alt="Фото кожуха">
+								<!-- <span class="item-catalog-cases__badge">-10%</span> -->
+							</div>
+
+							<div class="item-catalog-cases__content">
+								<h5 class="item-catalog-cases__name">
+									Кожух GT 1200 winter
+								</h5>
+								<h5 class="item-catalog-cases__descr">
+									На любой 1-цилинровый генератор
+								</h5>
+								<div class="item-catalog-cases__price">
+									<!-- <span class="item-catalog-cases__old-price">
+										219 000 ₽</span> -->
+									<span class="item-catalog-cases__current-price">
+										110 000 ₽
+									</span>
+								</div>
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_mobile button"
+									data-popup="#order-popup">Заказать
+								</button>
+
+							</div>
+							<div class="item-catalog-cases__footer">
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_desk button"
+									data-popup="#order-popup">Заказать</button>
+							</div>
+						</li>
+						<li class="catalog-cases__item item-catalog-cases _catalog-item hidden-content">
+							<div class="item-catalog-cases__image">
+								<img data-src="@img/catalog-cases/01.png" alt="Фото кожуха">
+								<!-- <span class="item-catalog-cases__badge">-10%</span> -->
+							</div>
+
+							<div class="item-catalog-cases__content">
+								<h5 class="item-catalog-cases__name">
+									Кожух GT 1200 winter
+								</h5>
+								<h5 class="item-catalog-cases__descr">
+									На любой 1-цилинровый генератор
+								</h5>
+								<div class="item-catalog-cases__price">
+									<!-- <span class="item-catalog-cases__old-price">
+										219 000 ₽</span> -->
+									<span class="item-catalog-cases__current-price">
+										110 000 ₽
+									</span>
+								</div>
+
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_mobile button"
+									data-popup="#order-popup">Заказать
+								</button>
+
+							</div>
+							<div class="item-catalog-cases__footer">
+								<button type="button" class="item-catalog-cases__button item-catalog-cases__button_desk button"
+									data-popup="#order-popup">Заказать</button>
+							</div>
+						</li>
+
+
+					</ul>
+					<button data-showmore-button class="show-more button" type="button">
+						<!-- <button type="button" class="show-more button catalog-cases__button"> -->
+						<span>Смотреть все </span>
+						<span>Скрыть</span>
+					</button>
+				</div>
+			</section>
+
+			<section class="quiz" id="quiz">
+				<div class="quiz__container">
+					<h2 class="quiz__title title-h2" data-watch anim-up-down>Поможем подобрать решение</h2>
+					<form class="quiz-form" action="#" data-dev data-popup-message="#thanks-popup" data-watch anim-up-down
+						delay30>
+
+						<fieldset class="quiz-form__fieldset fieldset quiz-form__fieldset_start">
+							<div class="quiz-form__media">
+								<img class="quiz-form__image" data-src="@img/quize/011.png" alt="Дом">
+							</div>
+							<div class="quiz-form__content quiz-form__content_position">
+								<h4 class="quiz-form__title">Где требуется установить генератор?</h4>
+
+								<div class="quiz-form__options">
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="position" value="Загородный дом">
+												<span class="wpcf7-list-item-label">
+													Загородный дом
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="position" value="Дача">
+												<span class="wpcf7-list-item-label">
+													Дача
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="position" value="Небольшое производство (до N кВт)">
+												<span class="wpcf7-list-item-label">
+													Небольшое производство (до N кВт)
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="position" value="Другое">
+												<span class="wpcf7-list-item-label">
+													Другое
+												</span>
+											</label>
+										</span>
+									</span>
+
+								</div>
+
+								<div class="quiz-form__progress-wrapper">
+									<button type="submit" class="button quiz-form__button button_next"
+										data-da=".quiz-form__content_position,620">Далее</button>
+									<div class="quiz-form__progress-box progress-box">
+										<div class="progress-box__text">Вопрос</div>
+										<div class="progress-box__bar">
+											<div class="progress-box__progress"></div>
+										</div>
+										<div class="progress-box__values">
+											<span class="progress-box__number _active">1</span>
+											<span class="progress-box__number">2</span>
+											<span class="progress-box__number">3</span>
+											<span class="progress-box__number">4</span>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</fieldset>
+
+						<fieldset class="quiz-form__fieldset fieldset">
+							<div class="quiz-form__media">
+								<img class="quiz-form__image" data-src="@img/quize/022.png" alt="Дом">
+								<div class="quiz-form__badge quiz-form__badge_5"><span>5</span> кВт</div>
+								<div class="quiz-form__badge quiz-form__badge_10"><span>10</span> кВт</div>
+								<div class="quiz-form__badge quiz-form__badge_15"><span>15</span> кВт</div>
+							</div>
+
+							<div class="quiz-form__content quiz-form__content_power">
+								<h4 class="quiz-form__title">Какую мощность требуется обеспечить?</h4>
+
+								<div class="quiz-form__options">
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="power" value="до 5 кВт">
+												<span class="wpcf7-list-item-label">
+													до 5 кВт
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="power" value="6 - 9 кВт">
+												<span class="wpcf7-list-item-label">
+													6 - 9 кВт
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="power" value="10 кВт и более">
+												<span class="wpcf7-list-item-label">
+													10 кВт и более
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="power" value="Я не знаю мощность, нужна помощь в подборе">
+												<span class="wpcf7-list-item-label">
+													Я не знаю мощность, нужна помощь в подборе
+												</span>
+											</label>
+										</span>
+									</span>
+
+								</div>
+
+								<div class="quiz-form__progress-wrapper">
+									<button type="submit" class="button quiz-form__button button_next"
+										data-da=".quiz-form__footer_power,620">Далее</button>
+									<div class="quiz-form__progress-box progress-box">
+										<div class="progress-box__text">Вопрос</div>
+										<div class="progress-box__bar">
+											<div class="progress-box__progress"></div>
+											<div class="progress-box__progress"></div>
+										</div>
+										<div class="progress-box__values">
+											<span class="progress-box__number _active">1</span>
+											<span class="progress-box__number _active">2</span>
+											<span class="progress-box__number">3</span>
+											<span class="progress-box__number">4</span>
+										</div>
+									</div>
+
+									<button class="button button_back" data-da=".quiz-form__footer_power,620"><img
+											src="img/icons/arrow-up.svg" alt="Стрелка назад"></button>
+								</div>
+								<div class="quiz-form__footer quiz-form__footer_power"></div>
+
+							</div>
+						</fieldset>
+
+						<fieldset class="quiz-form__fieldset fieldset">
+							<div class="quiz-form__media">
+								<img class="quiz-form__image" data-src="@img/quize/033.png" alt="Дом">
+							</div>
+
+							<div class="quiz-form__content quiz-form__content_case">
+								<h4 class="quiz-form__title">Требуется ли кожух для генератора?</h4>
+
+								<div class="quiz-form__options">
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="case" value="Да, нужен кожух">
+												<span class="wpcf7-list-item-label">
+													Да, нужен кожух
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="case" value="Нет, нужен генератор без кожуха">
+												<span class="wpcf7-list-item-label">
+													Нет, нужен генератор без кожуха
+												</span>
+											</label>
+										</span>
+									</span>
+
+									<span class="wpcf7-form-control wpcf7-radio">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="radio" name="case" value="Я не знаю, нужен ли кожух">
+												<span class="wpcf7-list-item-label">
+													Я не знаю, нужен ли кожух
+												</span>
+											</label>
+										</span>
+									</span>
+
+								</div>
+
+								<div class="quiz-form__progress-wrapper">
+									<button type="submit" class="button quiz-form__button button_next"
+										data-da=".quiz-form__footer_case,620">Далее</button>
+									<div class="quiz-form__progress-box progress-box">
+										<div class="progress-box__text">Вопрос</div>
+										<div class="progress-box__bar">
+											<div class="progress-box__progress"></div>
+											<div class="progress-box__progress"></div>
+											<div class="progress-box__progress"></div>
+										</div>
+										<div class="progress-box__values">
+											<span class="progress-box__number _active">1</span>
+											<span class="progress-box__number _active">2</span>
+											<span class="progress-box__number _active">3</span>
+											<span class=" progress-box__number">4</span>
+										</div>
+									</div>
+									<button class="button button_back" data-da=".quiz-form__footer_case,620"><img
+											src="img/icons/arrow-up.svg" alt="Стрелка назад"></button>
+								</div>
+								<div class="quiz-form__footer quiz-form__footer_case"></div>
+							</div>
+						</fieldset>
+
+						<fieldset class="quiz-form__fieldset _finish">
+							<div class="quiz-form__media">
+								<img class="quiz-form__image" data-src="@img/quize/044.png" alt="Дом">
+							</div>
+
+							<div class="quiz-form__content quiz-form__content_send">
+								<h4 class="quiz-form__title">Оставьте телефон для связи, перезвоним в течение 15 минут с готовыми
+									вариантами</h4>
+
+								<div class="quiz-form__line quiz-form__line_name">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-placeholder="Ваше имя"
+										placeholder="Ваше имя" class="input quiz-form__input">
+								</div>
+
+								<div class="quiz-form__line quiz-form__line_tel">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										data-placeholder="Контактный номер телефона" placeholder="Контактный номер телефона"
+										class="input quiz-form__input">
+								</div>
+
+								<div class="quiz-form__checkbox">
+
+									<label class="checkbox checkbox_cf7">
+										<span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><input
+													type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+													id="accept" aria-invalid="false" checked><span></span></span></span>
+										<span class="checkbox__text">Нажимая Оставить заявку, Вы соглашаетесь с
+											<a href="#!">условиями обработки персональных данных</a></span>
+									</label>
+
+								</div>
+
+								<div class="quiz-form__progress-wrapper">
+									<button id="quiz-submit" type="submit"
+										class="button quiz-form__button button_next quiz-form__button_finish"
+										data-da=".quiz-form__footer_send,620">Оставить заявку</button>
+									<div class="quiz-form__progress-box progress-box">
+										<div class="progress-box__text">Вопрос</div>
+										<div class="progress-box__bar">
+											<div class="progress-box__progress"></div>
+											<div class="progress-box__progress"></div>
+											<div class="progress-box__progress"></div>
+											<div class="progress-box__progress"></div>
+										</div>
+
+										<div class="progress-box__values">
+											<span class="progress-box__number _active">1</span>
+											<span class="progress-box__number _active">2</span>
+											<span class="progress-box__number _active">3</span>
+											<span class=" progress-box__number _active">4</span>
+										</div>
+									</div>
+									<button class="button button_back" data-da=".quiz-form__footer_send,620"><img
+											src="img/icons/arrow-up.svg" alt="Стрелка назад"></button>
+								</div>
+								<div class="quiz-form__footer quiz-form__footer_send"></div>
+
+							</div>
+						</fieldset>
+
+					</form>
+				</div>
+			</section>
+
+			<section class="our-works">
+				<div class="our-works__container">
+					<h2 class="our-works__title title-h2" data-watch anim-up-down>Наши работы</h2>
+
+					<!-- Оболонка слайдера -->
+					<div class="our-works__slider swiper" data-watch anim-up-down delay20>
+						<!-- Частина слайдера, що рухається -->
+						<div class="our-works__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="our-works__slide swiper-slide">
+								<div class="our-works__box">
+									<img data-src="@img/our-works/01.jpg" alt="" class="our-works__image">
+
+									<button class="our-works__button" type="button" data-popup="#video-popup"
+										data-popup-youtube="mmBEZ3x-QRo"></button>
+
+									<img src="@img/our-works/circle.svg" alt="" class="our-works__decor-circle">
+
+								</div>
+								<div class="our-works__text">
+									<div class="our-works__possition">Адрес объекта: <span>Новорижское шоссе, коттеджный поселок
+											Петровский Парк</span></div>
+									<div class="our-works__time">Длительность монтажных работ - <span>3 часа</span></div>
+								</div>
+							</div>
+
+							<div class="our-works__slide swiper-slide">
+								<div class="our-works__box">
+									<img src="@img/our-works/01.jpg" alt="" class="our-works__image">
+
+									<button class="our-works__button" type="button" data-popup="#video-popup"
+										data-popup-youtube="mmBEZ3x-QRo"></button>
+
+									<img src="@img/our-works/circle.svg" alt="" class="our-works__decor-circle">
+
+								</div>
+								<div class="our-works__text">
+									<div class="our-works__possition">Адрес объекта: <span>Новорижское шоссе, коттеджный поселок
+											Петровский Парк</span></div>
+									<div class="our-works__time">Длительность монтажных работ - <span>3 часа</span></div>
+								</div>
+							</div>
+
+							<div class="our-works__slide swiper-slide">
+								<div class="our-works__box">
+									<img src="@img/our-works/01.jpg" alt="" class="our-works__image">
+
+									<button class="our-works__button" type="button" data-popup="#video-popup"
+										data-popup-youtube="mmBEZ3x-QRo"></button>
+
+									<img src="@img/our-works/circle.svg" alt="" class="our-works__decor-circle">
+
+								</div>
+								<div class="our-works__text">
+									<div class="our-works__possition">Адрес объекта: <span>Новорижское шоссе, коттеджный поселок
+											Петровский Парк</span></div>
+									<div class="our-works__time">Длительность монтажных работ - <span>3 часа</span></div>
+								</div>
+							</div>
+
+							<div class="our-works__slide swiper-slide">
+								<div class="our-works__box">
+									<img src="@img/our-works/01.jpg" alt="" class="our-works__image">
+
+									<button class="our-works__button" type="button" data-popup="#video-popup"
+										data-popup-youtube="mmBEZ3x-QRo"></button>
+
+									<img src="@img/our-works/circle.svg" alt="" class="our-works__decor-circle">
+
+								</div>
+								<div class="our-works__text">
+									<div class="our-works__possition">Адрес объекта: <span>Новорижское шоссе, коттеджный поселок
+											Петровский Парк</span></div>
+									<div class="our-works__time">Длительность монтажных работ - <span>3 часа</span></div>
+								</div>
+							</div>
+
+							<div class="our-works__slide swiper-slide">
+								<div class="our-works__box">
+									<img src="@img/our-works/01.jpg" alt="" class="our-works__image">
+
+									<button class="our-works__button" type="button" data-popup="#video-popup"
+										data-popup-youtube="mmBEZ3x-QRo"></button>
+
+									<img src="@img/our-works/circle.svg" alt="" class="our-works__decor-circle">
+
+								</div>
+								<div class="our-works__text">
+									<div class="our-works__possition">Адрес объекта: <span>Новорижское шоссе, коттеджный поселок
+											Петровский Парк</span></div>
+									<div class="our-works__time">Длительность монтажных работ - <span>3 часа</span></div>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- Якщо потрібна пагінація -->
+						<div class="our-works__pagination swiper-pagination"></div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<button type="button" class="our-works-button-prev"></button>
+						<button type="button" class="our-works-button-next"></button>
+
+					</div>
+
+
+
+
+				</div>
+			</section>
+
+
+			<section class="faq">
+				<div class="faq__container">
+					<h2 class="faq__title title-h2" data-watch anim-up-down>Часто задаваемые вопросы</h2>
+					<div class="faq__body">
+
+						<div data-spollers class="spollers">
+							<details class="spollers__item" data-watch anim-up-down delay10>
+								<summary class="spollers__title">Зачем нужен кожух для генератора?
+									<span class="spollers__circle"></span>
+								</summary>
+								<div class="spollers__body"><span>Основное назначение кожуха</span> - защита от воздействий окружающей
+									среды, что
+									позволяет безопасно эксплуатировать генератор в любое время года. Кожух снижает уровень шума от
+									работающего генератора, а также обеспечивает отвод выхлопных газов и конденсата. </div>
+							</details>
+							<details class="spollers__item" data-watch anim-up-down delay20>
+								<summary class="spollers__title">Что включает в себя энергоаудит?
+									<span class="spollers__circle"></span>
+								</summary>
+								<div class="spollers__body"><span>Основное назначение кожуха</span> - защита от воздействий окружающей
+									среды, что
+									позволяет безопасно эксплуатировать генератор в любое время года. Кожух снижает уровень шума от
+									работающего генератора, а также обеспечивает отвод выхлопных газов и конденсата. </div>
+							</details>
+							<details class="spollers__item" data-watch anim-up-down delay30>
+								<summary class="spollers__title">Можно ли установить генератор в гараж, подсобное помещение или на
+									улицу?<span class="spollers__circle"></span></summary>
+								<div class="spollers__body"><span>Основное назначение кожуха</span> - защита от воздействий окружающей
+									среды, что
+									позволяет безопасно эксплуатировать генератор в любое время года. Кожух снижает уровень шума от
+									работающего генератора, а также обеспечивает отвод выхлопных газов и конденсата. </div>
+							</details>
+							<details class="spollers__item" data-watch anim-up-down delay40>
+								<summary class="spollers__title">Какие бренды генераторов вы устанавливаете?<span
+										class="spollers__circle"></span></summary>
+								<div class="spollers__body"><span>Основное назначение кожуха</span> - защита от воздействий окружающей
+									среды, что
+									позволяет безопасно эксплуатировать генератор в любое время года. Кожух снижает уровень шума от
+									работающего генератора, а также обеспечивает отвод выхлопных газов и конденсата. </div>
+							</details>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="section-map">
+				<div class="custom-shape-divider-top-1703578015">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+						<path
+							d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+							class="shape-fill"></path>
+					</svg>
+				</div>
+				<div class="map" id="map">
+				</div>
+				<div class="section-map__container">
+
+					<div class="section-map__map">
+					</div>
+
+				</div>
+
+				<!-- <div class="section-map__container">
+				</div> -->
+			</section>
+
+			<button data-popup="#thanks-popup" type="submit"
+				style="display: none; position: absolute; z-index: -1000;"></button>
+
+			<!-- <section class="contacts">
+				<div class="button__up">
+					<a href="#" data-goto=".intro" class="button__up-box">
+						<img src="@img/icons/arrow-up.svg" alt="Стрелка вверх">
+					</a>
+					<span>подняться вверх</span>
+				</div>
+				<div class="contacts__container">
+					<h2 class="contacts__title title-h2" data-watch anim-up-down>Контакты</h2>
+					<ul class="contacts__list" data-watch anim-up-down delay10>
+						<li class="contacts__item">
+							<div class="contacts__icon">
+								<img src="@img/map/location.svg" alt="Иконка адрес">
+								<div class="list-line"></div>
+							</div>
+							<div class="contacts__value">
+								<span>Адрес</span>
+								г. Москва, ул. Московская 324
+							</div>
+						</li>
+						<li class="contacts__item">
+							<div class="contacts__icon">
+								<img src="@img/map/time.svg" alt="Иконка время работы">
+								<div class="list-line"></div>
+							</div>
+							<div class="contacts__value">
+								<span>Время работы</span>
+								пн-пт 10:00 - 19:00 по Мск
+							</div>
+						</li>
+						<li class="contacts__item">
+							<div class="contacts__icon">
+								<img src="@img/map/tel.svg" alt="Иконка Связаться с нами">
+								<div class="list-line"></div>
+							</div>
+							<div class="contacts__value">
+								<span>Связаться с нами</span>
+								<a href="tel:79999999999">+7 (999) 999-99-99</a>
+								<a class="contacts__mail" href="mailto:info@company.com">info@company.com</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section> -->
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

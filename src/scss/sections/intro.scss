@@ -1,0 +1,148 @@
+.intro {
+  position: relative;
+
+  @include adaptiveValue("padding-top", 252, 157);
+  // @include adaptiveValue("padding-bottom", 300, 200);
+
+  &__decor {
+    position: absolute;
+  }
+
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 37% 1fr;
+
+    @media (max-width:$tablet) {
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: toRem(40);
+  }
+
+  &__subtitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 86px;
+    @include adaptiveValue("margin-bottom", 102, 68);
+    // @include adaptiveValue("padding-left", 80, 46);
+    // padding-left: 80px;
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 11.7%;
+      top: 50%;
+      height: toRem(1);
+      @include adaptiveValue("width", 40, 32);
+      background: #fff;
+    }
+  }
+
+  &__media {
+    position: relative;
+
+  }
+
+  &__main-image {
+    position: absolute;
+    // @include adaptiveValue("width", 1280, 300);
+    right: -30%;
+    top: -70.8%;
+
+    z-index: 10;
+
+    @media (max-width:$tablet) {
+      top: toRem(30);
+      left: 50%;
+      transform: translate(-50%, 0) !important;
+    }
+  }
+
+  &__button {
+    // gap: 23px;
+    padding-left: toRem(34) !important;
+    padding: 8px;
+    justify-content: space-between;
+
+    box-shadow: 0px 0px 60px 0px rgba(44, 217, 150, 0.86);
+    transition: all 0.5s;
+
+    span {
+      width: 64px;
+      height: 64px;
+      background-color: $bodyColor;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        transition: transform 0.3s;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+
+        box-shadow: 0px 0px 20px 0px rgba(44, 217, 150, 0.86);
+
+
+        span {
+          svg {
+
+            transform: scale(1.3);
+          }
+        }
+
+      }
+
+    }
+  }
+
+  &__social-list {
+    position: absolute;
+    right: -24%;
+    bottom: 11%;
+    display: flex;
+    align-items: center;
+    gap: toRem(20);
+    transform: rotate(90deg);
+
+    span {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    gap: toRem(16);
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: toRem(57);
+    height: toRem(57);
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+}

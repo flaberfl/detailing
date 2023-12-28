@@ -1,0 +1,469 @@
+.quiz {
+  @include adaptiveValue("padding-top", 125, 80);
+  @include adaptiveValue("padding-bottom", 157, 67);
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 60, 38);
+  }
+}
+
+// Прячем нативные кнопки RADIO
+.wpcf7-radio input[type=radio] {
+  position: relative;
+  visibility: hidden;
+}
+
+.wpcf7-radio label {
+  position: relative;
+  cursor: pointer;
+}
+
+// Бэкграунд радио кнопки
+.wpcf7-radio input[type="radio"]+span:before {
+  display: block;
+  position: absolute;
+  content: '';
+
+  width: toRem(37);
+  height: toRem(37);
+
+  border-radius: toRem(12);
+  left: 0;
+
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: transparent;
+  border: toRem(1) solid #BCC0CC;
+}
+
+// Галочка при нажатии на кнопку
+.wpcf7-radio input[type=radio]:checked+span:before {
+  height: toRem(38);
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.19);
+  background: url('@img/quize/check.svg') center center no-repeat;
+  border-radius: toRem(12);
+}
+
+// Дефис между кнопкой и текстом
+.wpcf7-list-item {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #BCC0CC;
+    width: toRem(16);
+    height: toRem(2);
+    left: toRem(50);
+    margin-top: toRem(15);
+    // top: 50%;
+  }
+
+  .quiz-form__options & {
+    &::before {
+      margin-top: toRem(13);
+
+      @media (max-width:$tablet) {
+        margin-top: toRem(10);
+      }
+    }
+  }
+
+  label {
+    display: flex;
+  }
+}
+
+// Текст радио кнопки
+.wpcf7-list-item-label {
+  margin-left: toRem(62);
+
+  @include adaptiveValue("font-size", 22, 16);
+  color: $colorGrey;
+  line-height: normal;
+  letter-spacing: -0.88px;
+}
+
+.quiz-form {
+  background-color: #fff;
+  overflow: hidden;
+
+  @media (min-width:$tablet) {
+    border-radius: toRem(50);
+  }
+
+  @media (max-width:$tablet) {
+    margin-left: toRem(-15);
+    margin-right: toRem(-15);
+  }
+
+  /* .quiz-form__fieldset */
+  &__fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(20);
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: toRem(64);
+
+    @media (max-width:$tablet) {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
+
+    opacity: 0;
+    position: absolute;
+    transform: scale(.8);
+
+
+    z-index: -20;
+    transition: all .3s ease 0s;
+
+
+    &._active {
+
+      opacity: 1;
+      position: relative;
+      z-index: 100;
+      transform: scale(1);
+    }
+
+    &._finish {
+      @include adaptiveValue("padding-right", 118, 20, 1, 1920, 992);
+    }
+  }
+
+  /* .quiz-form__media */
+  &__media {
+    position: relative;
+
+    @media (max-width:$tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  /* .quiz-form__background */
+  &__background {
+    max-width: 100%;
+  }
+
+  /* .quiz-form__image */
+  &__image {
+    transform: translate(0, 4.4%);
+    max-width: 100%;
+
+    @media (max-width:$tablet) {
+      max-width: toRem(460);
+    }
+
+    @media (max-width: em(550)) {
+      max-width: 100%;
+    }
+
+    ._finish & {
+      transform: translate(0, 12.7%);
+    }
+  }
+
+  /* .quiz-form__content */
+  &__content {
+    padding-top: toRem(135);
+    max-width: toRem(600);
+
+    @media (max-width:$tablet) {
+      grid-area: 1/1;
+      padding: toRem(50) toRem(20) 0 toRem(20);
+    }
+  }
+
+  /* .quiz-form__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 69, 44);
+
+    @include adaptiveValue("font-size", 26, 20);
+    font-weight: 900;
+    line-height: normal;
+
+    ._finish & {
+      max-width: toRem(570);
+      @include adaptiveValue("margin-bottom", 47, 30);
+
+      @include adaptiveValue("font-size", 32, 26);
+    }
+  }
+
+  /* .quiz-form__options */
+  &__options {
+    display: grid;
+    gap: toRem(25);
+    @include adaptiveValue("margin-bottom", 63, 50);
+  }
+
+  /* .quiz-form__progress-wrapper */
+  &__progress-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: toRem(573);
+    padding: toRem(20);
+    @include adaptiveValue("gap", 35, 15);
+    width: 100%;
+
+    @include adaptiveValue("border-radius", 50, 30);
+    box-shadow: $shadow;
+
+    ._finish & {
+      max-width: none;
+      // justify-content: space-between;
+      padding: 0;
+
+      box-shadow: none;
+    }
+  }
+
+  /* .quiz-form__button */
+  &__button {
+    max-width: toRem(164);
+
+    @media (max-width: em(620)) {
+
+      .quiz-form__content_position & {
+        margin-top: toRem(32);
+      }
+    }
+
+    ._finish & {
+      max-width: toRem(242);
+    }
+  }
+
+  /* .quiz-form__progress-box */
+  &__progress-box {
+    @media (max-width: em(550)) {
+      width: 100% !important;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include adaptiveValue("width", 108, 78);
+    @include adaptiveValue("height", 108, 78);
+    padding: toRem(18) 0;
+
+    background-color: $mainColor;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+
+    @include adaptiveValue("font-size", 22, 18);
+    color: $colorOrange;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: center;
+
+    @media (max-width:$mobile) {
+      letter-spacing: .8px;
+    }
+
+    span {
+      @include adaptiveValue("font-size", 38, 22);
+    }
+
+    &_5 {
+      bottom: 22%;
+      right: 49%;
+    }
+
+    &_10 {
+      bottom: 35%;
+      right: 15%;
+    }
+
+    &_15 {
+      bottom: 50%;
+      right: 39%;
+    }
+  }
+
+  &__line {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+
+    &_name,
+    &_tel {
+      @media (min-width:em(480)) {
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: toRem(28);
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+
+    &_name {
+      &::before {
+        background: url('@img/quize/name.svg') no-repeat;
+        width: toRem(30);
+        height: toRem(30);
+      }
+    }
+
+    &_tel {
+      &::before {
+        background: url('@img/quize/tel.svg') no-repeat;
+        width: toRem(35);
+        height: toRem(35);
+      }
+    }
+  }
+
+  &__input {
+    @include adaptiveValue("height", 80, 60);
+    padding: toRem(10) toRem(29);
+    width: 100%;
+
+    border-radius: toRem(20);
+    background: #F5F5F5;
+
+    font-size: toRem(16);
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__checkbox {
+    margin: toRem(50) 0;
+  }
+
+  &__footer {
+    @media (max-width: em(620)) {
+      margin-top: toRem(30);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: toRem(40);
+
+      @media (max-width: em(480)) {
+        gap: toRem(20);
+      }
+    }
+  }
+
+}
+
+.progress-box {
+  @include adaptiveValue("width", 304, 247);
+
+  /* .progress-box__text */
+  &__text {
+    margin-bottom: toRem(17);
+
+    font-size: toRem(14);
+    color: $colorGrey;
+    line-height: normal;
+
+    ._finish & {
+      visibility: hidden;
+    }
+  }
+
+  /* .progress-box__bar */
+  &__bar {
+    margin-bottom: toRem(11);
+    width: 100%;
+    height: toRem(10);
+    display: flex;
+
+    border-radius: toRem(6);
+    background: #D9D9D9;
+  }
+
+  /* .progress-box__progress */
+  &__progress {
+    width: 25%;
+    background-color: $colorOrange;
+    height: 100%;
+    border-radius: toRem(6);
+  }
+
+  /* .progress-box__value */
+  &__values {
+    display: flex;
+  }
+
+  &__number {
+    margin-right: 23.3%;
+
+    font-size: toRem(14);
+    font-weight: 900;
+    line-height: normal;
+    color: #BCC0CC;
+
+    &._active {
+      color: $colorOrange;
+    }
+  }
+}
+
+.checkbox_cf7 {
+  display: flex;
+  align-items: flex-start;
+  gap: toRem(20);
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__label,
+.wpcf7-acceptance .wpcf7-list-item span {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  gap: toRem(20);
+}
+
+.wpcf7-acceptance .wpcf7-list-item span:before,
+.checkbox__label:before {
+  content: "";
+  flex: 0 0 toRem(37);
+  width: toRem(37);
+  height: toRem(37);
+  background-color: transparent;
+  border: toRem(1) solid #BCC0CC;
+  border-radius: toRem(12);
+}
+
+.checkbox__text {
+  position: relative;
+  padding-left: toRem(20);
+  padding-top: toRem(9);
+
+  font-size: toRem(14);
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: $colorGrey;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.checkbox__input:checked~span:before {
+  height: toRem(38);
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.19);
+  background: url('@img/quize/check.svg') center center no-repeat;
+  border-radius: toRem(12);
+}

@@ -1,0 +1,166 @@
+.about-case {
+  @include adaptiveValue("padding-top", 122, 80);
+  @include adaptiveValue("padding-bottom", 116, 86);
+
+  /* .about-case__container */
+  &__container {
+    display: grid;
+    justify-items: center;
+    row-gap: 60px;
+
+    @media (min-width:$tablet) {
+      align-items: center;
+      grid-template-columns: 1fr 49%;
+    }
+  }
+
+  /* .about-case__media */
+  &__media {
+    position: relative;
+
+    @media (max-width:$tablet) {
+      grid-area: 2/1;
+    }
+  }
+
+  &__image {
+    @media (min-width:$tablet) {
+      transform: translate(-16.6%, 3%);
+    }
+
+    img {
+      max-width: 100%;
+
+      @media (max-width:$tablet) {
+        max-width: 470px;
+      }
+
+      @media (max-width: em(550)) {
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  /* .about-case__badge */
+  &__badge {
+    position: absolute;
+    right: -6.6%;
+    top: -13.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include adaptiveValue("width", 180, 160);
+    @include adaptiveValue("height", 180, 160);
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 50%;
+    background-color: $whiteColor;
+    filter: drop-shadow(0px 9px 21px rgba(0, 0, 0, 0.10));
+
+    font-size: toRem(16);
+    font-weight: 700;
+    text-align: center;
+    line-height: normal;
+    color: $colorOrange;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('@img/about-case/ellipse.svg') center / cover no-repeat;
+      width: 100%;
+      height: 100%;
+      transform: scale(.87);
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    @media (max-width:$mobile) {
+      font-size: toRem(14);
+    }
+  }
+
+  /* .about-case__content */
+  &__content {}
+
+  /* .about-case__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 85, 30);
+  }
+
+  /* .about-case__list */
+  &__list {
+    margin-left: toRem(-8);
+  }
+
+  /* .about-case__slogan */
+  &__slogan {
+    @include adaptiveValue("margin-top", 73, 20);
+    padding-left: toRem(30);
+    border-left: toRem(5) solid $colorOrange;
+
+    @include adaptiveValue("font-size", 20, 16);
+    line-height: normal;
+    letter-spacing: 1px;
+
+    @media (min-width:$mobile) {
+      padding-top: toRem(6);
+      padding-bottom: toRem(3);
+      margin-left: toRem(10);
+    }
+
+    @media (max-width:$mobile) {
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+.list-about-case {
+  position: relative;
+  z-index: 20;
+
+  /* .list-about__item */
+  &__item {
+    position: relative;
+    @include adaptiveValue("padding-left", 78, 70);
+
+    @include adaptiveValue("font-size", 22, 16);
+    line-height: normal;
+    letter-spacing: 1.1px;
+
+    &:not(:last-child) {
+      margin-bottom: toRem(25);
+    }
+
+    @media (max-width:$mobile) {
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    left: 0;
+    top: toRem(-8);
+    display: flex;
+    align-items: center;
+    gap: toRem(6);
+    @include adaptiveValue("gap", 6, 2);
+  }
+
+  /* .list-about__text */
+  &__text {
+
+    @include adaptiveValue("font-size", 22, 16);
+    color: $colorGrey;
+    line-height: normal;
+    letter-spacing: 1.1px;
+
+    @media (max-width:$mobile) {
+      letter-spacing: 0.8px;
+    }
+  }
+}
