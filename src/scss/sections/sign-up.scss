@@ -1,0 +1,90 @@
+.sign-up {
+
+  /* .sign-up__container */
+  &__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 55%;
+  }
+
+  /* .sign-up__content */
+  &__content {}
+
+  /* .sign-up__title */
+  &__title {
+    margin-bottom: toRem(56);
+
+    text-align: left;
+  }
+
+  /* .sign-up__text */
+  &__text {
+    margin-bottom: toRem(40);
+
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
+
+  /* .sign-up__callback */
+  &__callback {
+    display: flex;
+    align-items: flex-start;
+    gap: toRem(30);
+  }
+
+  /* .sign-up__tel */
+  &__tel {
+    font-size: 26px;
+    line-height: normal;
+    letter-spacing: 1.3px;
+
+    span {
+      display: block;
+      color: #AD81FF;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.9px;
+    }
+  }
+
+  /* .sign-up__social */
+  &__social {}
+
+  /* .sign-up__image */
+  &__image {}
+}
+
+.title-h2 {}
+
+.header {
+
+  /* .header__social */
+  &__social {}
+}
+
+.social {
+
+  /* .social__link */
+  &__link {
+
+    /* .social__link_telegram */
+    &_telegram {}
+
+    /* .social__link_wa */
+    &_wa {}
+  }
+}
+
+.decor-span {
+
+  /* .decor-span__item */
+  &__item {}
+
+  /* .decor-span__before */
+  &__before {}
+
+  /* .decor-span__icon */
+  &__icon {}
+}
