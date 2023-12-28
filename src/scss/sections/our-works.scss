@@ -1,7 +1,32 @@
 .our-works {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    // top: 50%;
+    transform: translate(-50%, 0%);
+    // border-radius: 655px;
+    top: 0;
+    background: radial-gradient(72.9% 72.9% at 35.19% 35.11%, rgba(139, 77, 255, 0.59) 0%, rgba(41, 132, 235, 0.59) 100%);
+    filter: blur(150px);
+    width: toRem(655);
+    height: toRem(353);
+    z-index: -1;
+  }
 
   &__container {
     position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    // background: radial-gradient(72.9% 72.9% at 35.19% 35.11%, rgba(139, 77, 255, 0.59) 0%, rgba(41, 132, 235, 0.59) 100%) url('@img/services/blur-dec.svg') 0 0 no-repeat;
+    left: 50%;
+    top: toRem(-170);
+    transform: translate(-50%, 0%);
+    z-index: -1;
   }
 
   &__title {
