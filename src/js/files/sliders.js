@@ -37,12 +37,12 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			centeredSlides: true,
-			slidesPerView: 1.5,
-			spaceBetween: -60,
+			slidesPerView: 3,
+			spaceBetween: 20,
 			loop: true,
 			// grabCursor: true,
 			//autoHeight: true,
-			speed: 1300,
+			speed: 800,
 			centeredSlides: true,
 			centeredSlidesBounds: true,
 			// coverflowEffect: {
@@ -102,8 +102,8 @@ function initSliders() {
 				},
 				1268: {
 					centeredSlides: true,
-					slidesPerView: 1.5,
-					spaceBetween: -60,
+					slidesPerView: 3,
+					spaceBetween: 20,
 				},
 			},
 

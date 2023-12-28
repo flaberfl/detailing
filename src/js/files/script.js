@@ -149,40 +149,40 @@ function init() {
 
 // Присвоим попапам и линкам на них порядковые номера
 
-const objPopupGensLink = document.querySelectorAll('.item-catalog__button');
-const objPopupGens = document.querySelectorAll('.catalog-popup');
+// const objPopupGensLink = document.querySelectorAll('.item-catalog__button');
+// const objPopupGens = document.querySelectorAll('.catalog-popup');
 
-const objPopupCasesLinkMob = document.querySelectorAll('.item-catalog-cases__button_mobile');
-const objPopupCasesLinkDesk = document.querySelectorAll('.item-catalog-cases__button_desk');
-const objPopupCases = document.querySelectorAll('.order-popup');
+// const objPopupCasesLinkMob = document.querySelectorAll('.item-catalog-cases__button_mobile');
+// const objPopupCasesLinkDesk = document.querySelectorAll('.item-catalog-cases__button_desk');
+// const objPopupCases = document.querySelectorAll('.order-popup');
 
-const objPopupVideoLink = document.querySelectorAll('.our-works__button');
-const objPopupVideo = document.querySelectorAll('.video-popup');
+// const objPopupVideoLink = document.querySelectorAll('.our-works__button');
+// const objPopupVideo = document.querySelectorAll('.video-popup');
 
 
-objPopupGensLink.forEach((element, i) =>
-  element.setAttribute('data-popup', '#catalog-popup' + '-' + i));
+// objPopupGensLink.forEach((element, i) =>
+//   element.setAttribute('data-popup', '#catalog-popup' + '-' + i));
 
-for (var i = 0, b; b = document.getElementById('catalog-popup'); ++i) {
-  b.id += '-' + i;
-}
+// for (var i = 0, b; b = document.getElementById('catalog-popup'); ++i) {
+//   b.id += '-' + i;
+// }
 
-objPopupCasesLinkMob.forEach((element, i) =>
-  element.setAttribute('data-popup', '#order-popup' + '-' + i));
+// objPopupCasesLinkMob.forEach((element, i) =>
+//   element.setAttribute('data-popup', '#order-popup' + '-' + i));
 
-objPopupCasesLinkDesk.forEach((element, i) =>
-  element.setAttribute('data-popup', '#order-popup' + '-' + i));
+// objPopupCasesLinkDesk.forEach((element, i) =>
+//   element.setAttribute('data-popup', '#order-popup' + '-' + i));
 
-for (var i = 0, b; b = document.getElementById('order-popup'); ++i) {
-  b.id += '-' + i;
-}
+// for (var i = 0, b; b = document.getElementById('order-popup'); ++i) {
+//   b.id += '-' + i;
+// }
 
-objPopupVideoLink.forEach((element, i) =>
-  element.setAttribute('data-popup', '#video-popup' + '-' + i));
+// objPopupVideoLink.forEach((element, i) =>
+//   element.setAttribute('data-popup', '#video-popup' + '-' + i));
 
-for (var i = 0, b; b = document.getElementById('video-popup'); ++i) {
-  b.id += '-' + i;
-}
+// for (var i = 0, b; b = document.getElementById('video-popup'); ++i) {
+//   b.id += '-' + i;
+// }
 
 
 

@@ -1,212 +1,148 @@
 .our-works {
-  @include adaptiveValue("padding-top", 105, 60);
-  @include adaptiveValue("padding-bottom", 365, 130);
 
-  background-color: #fff;
-
-  @media (max-width:$mobile) {
-    padding-top: toRem(0);
+  &__container {
+    position: relative;
   }
 
   &__title {
-    @include adaptiveValue("margin-bottom", 73, 35);
+    @include adaptiveValue("margin-bottom", 85, 35);
   }
 
   &__slider {
     position: relative;
   }
 
-  &__image {
-    max-width: 100%;
-  }
+  &__slide {
+    max-width: toRem(452);
 
-  &__box {
-    position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50px;
+    background: linear-gradient(111deg, #3145FF 1.38%, #2D9AC9 35.28%, #7530F3 67.13%, #31F3FF 100%);
+  }
 
-    border-radius: toRem(50);
-    @include adaptiveValue("margin-bottom", 43, 21);
-
-    &::before {
-      transition: opacity .6s;
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(59, 67, 79, 0.80);
-
-      @media (min-width:$mobile) {
-        opacity: 0;
-      }
-    }
-
-    @media (min-width:$mobile) {
-      transition: scale 1.6s;
-
-      scale: .8;
-
-      .swiper-slide-active & {
-        transition: scale 1.6s;
-        scale: 1;
-
-        &::before {
-          opacity: 1;
-        }
-      }
+  &__top {
+    img {
+      max-width: 100%;
     }
   }
 
-  &__decor-circle {
-    .swiper-slide-active & {
-      opacity: 1;
-    }
+  &__image {}
 
-    position: absolute;
-    opacity: 0;
-    animation: moving 6s infinite linear;
-
-    @media (max-width:$tablet) {
-      width: toRem(180);
-      height: toRem(180);
-    }
+  &__media {
+    position: relative;
+    padding: 0 toRem(25) toRem(25);
   }
 
   &__button {
     transition: all 0.6s;
-
-    .swiper-slide-active & {
-      opacity: .8;
-      pointer-events: all;
-    }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include adaptiveValue("width", 148, 77);
-    @include adaptiveValue("height", 148, 77);
+    @include adaptiveValue("width", 188, 77);
+    @include adaptiveValue("height", 188, 77);
+    background-color: #fff;
 
-    background: url('@img/our-works/play.svg') center center no-repeat;
-    background-color: rgba(255, 255, 255, 0.97);
-
-    pointer-events: none;
+    // pointer-events: none;
     border-radius: 50%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-    opacity: 0;
-    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    transition: all 0.3s;
+    // opacity: .2;
+
+    // z-index: -1;
+
+    &::before {
+      transition: all 0.3s;
+
+      border-radius: 50%;
+      background: #fff url('@img/icons/play.svg') center center no-repeat;
+      box-shadow: 0px 9px 23px 0px rgba(0, 0, 0, 0.25);
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      width: 46.8%;
+      height: 46.8%;
+
+
+    }
 
     @media (any-hover: hover) {
       &:hover {
-        // transform: scale(1.02);
-        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.4);
+
+        &::before {
+          transform: scale(1.1);
+        }
       }
     }
   }
 
-
   &__text {
+    margin-top: toRem(23);
+    margin-bottom: toRem(23);
+
     text-align: center;
-    opacity: 0;
+    font-size: 16px;
 
-    transition: opacity 0.3s;
-
-    .swiper-slide-active & {
-      opacity: 1;
-    }
-  }
-
-  &__possition {
-    @include adaptiveValue("margin-bottom", 23, 8);
-
-    @include adaptiveValue("font-size", 26, 16);
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
+    letter-spacing: 0.8px;
 
     span {
-      font-weight: 900;
-    }
-  }
-
-  &__time {
-    @include adaptiveValue("font-size", 18, 12);
-    font-weight: 400;
-    color: $colorGrey;
-    text-align: center;
-    line-height: normal;
-    letter-spacing: 0.9px;
-
-    span {
-      color: $mainColor;
-    }
-
-    @media (max-width:$mobile) {
-      letter-spacing: 0.6px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.8px;
     }
   }
 }
 
-.swiper {
-  overflow: visible !important;
-}
 
 .our-works-button-prev,
 .our-works-button-next {
+  margin-top: toRem(20);
   position: absolute;
   @include adaptiveValue("width", 80, 49);
   @include adaptiveValue("height", 80, 49);
 
   border-radius: 50%;
 
-  top: 40%;
-  transform: translate(0px, -50%);
   z-index: 10;
 
   transition: all .6s;
-
-  &:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
-    background-color: rgba(255, 255, 255, 0.97);
-  }
 }
 
 .our-works-button-prev {
-  left: 5%;
-  background: url('@img/our-works/arr-left.svg') center center no-repeat;
-  background-color: rgba(255, 255, 255, 0.4);
+  left: 0%;
 }
 
 .our-works-button-next {
-  background-color: red;
-  background: url('@img/our-works/arr-right.svg') center center no-repeat;
-  background-color: rgba(255, 255, 255, 0.4);
-  right: 5%;
+  right: 0%;
 }
 
 .our-works__pagination {
-  display: none;
-
-  bottom: toRem(-45) !important;
-
-  @media (max-width:$mobile) {
-    display: block;
-  }
+  bottom: -70px !important;
 }
 
 .swiper-pagination-bullet {
-  width: toRem(13) !important;
-  height: toRem(13) !important;
+  width: toRem(10) !important;
+  height: toRem(10) !important;
+
+  background-color: #36263E !important;
 }
 
 .swiper-pagination-bullet {
 
-  margin-right: toRem(7) !important;
-  margin-left: toRem(7) !important;
+  margin-right: toRem(8) !important;
+  margin-left: toRem(8) !important;
 
   &.swiper-pagination-bullet-active {
-    background-color: $colorOrange !important;
+    background-color: #00AD90 !important;
   }
 }
