@@ -1,0 +1,14 @@
+<svg width="865" height="832" viewBox="0 0 865 832" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1_1715" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="59" y="179" width="655" height="353">
+<ellipse cx="386.5" cy="355.5" rx="327.5" ry="176.5" fill="url(#paint0_radial_1_1715)" fill-opacity="0.59"/>
+</mask>
+<g mask="url(#mask0_1_1715)">
+<path d="M763 0L763 865M703 0L703 865M643 0L643 865M583 0L583 865M523 0L523 865M463 0L463 865M403 0L403 865M343 0L343 865M283 0L283 865M223 0L223 865M163 0L163 865M103 0L103 865M0 58.5L865 58.5M0 118.5L865 118.5M0 178.5L865 178.5M0 238.5L865 238.5M0 298.5L865 298.5M0 358.5L865 358.5M0 418.5L865 418.5M0 478.5L865 478.5M0 538.5L865 538.5M0 598.5L865 598.5M0 658.5L865 658.5M0 718.5L865 718.5M0 782.5L865 782.5M0 842.5L865 842.5M0 902.5L865 902.5M0 962.5L865 962.5" stroke="white" stroke-opacity="0.24"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1_1715" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(289.5 302.954) rotate(39.9315) scale(337.11 364.539)">
+<stop stop-color="#8B4DFF"/>
+<stop offset="1" stop-color="#2984EB"/>
+</radialGradient>
+</defs>
+</svg>
