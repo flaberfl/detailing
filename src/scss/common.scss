@@ -1,5 +1,9 @@
 // Заголовки, загальні БЕМ блоки та інше...
 
+.bottom-d {
+	height: 400px;
+}
+
 .title-h1 {
 	font-family: Montserrat;
 	font-size: 92px;
@@ -44,9 +48,11 @@
 // }
 
 .title-h2 {
-	@include adaptiveValue("font-size", 50, 30);
-	font-weight: 900;
+	font-size: 76px;
+	font-weight: 600;
 	line-height: normal;
+	letter-spacing: 3.8px;
+	text-align: center;
 }
 
 .list-line {

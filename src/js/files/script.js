@@ -4,52 +4,6 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
-// Обозначаем все каталоги
-const cardItems = document.querySelectorAll('._catalog-items');
-
-// Перебираем все каталоги
-for (const cardItem of cardItems) {
-  // Если дочерних элементов меньше трех
-  if (cardItem.children.length <= 3) {
-    // То родителю элемента присвоим класс, для того чтобы потом по классу отключить кнопку в этом блоке
-    cardItem.parentNode.classList.add('hide');
-  }
-}
-
-// Обозначаем все каталоги кожухов
-const cardItemsCases = document.querySelectorAll('._catalog-items-cases');
-for (const cardItem of cardItemsCases) {
-  // Если дочерних элементов меньше трех
-  if (cardItem.children.length <= 6) {
-    // То родителю элемента присвоим класс, для того чтобы потом по классу отключить кнопку в этом блоке
-    cardItem.parentNode.classList.add('hide');
-  }
-}
-
-const showMoreBtns = document.querySelectorAll('.show-more');
-
-showMoreBtns.forEach(btn => {
-  btn.addEventListener('click', event => {
-    const currentBtn = event.currentTarget;
-    const currentTab = currentBtn.closest('._catalog-body');
-    const catalogItems = currentTab.querySelector('._catalog-items');
-    const catalogItem = catalogItems.querySelectorAll('._catalog-item');
-
-    const catalogItemCase = catalogItems.querySelectorAll('._catalog-item-case');
-
-    for (let i = 2; i < catalogItem.length; i++) {
-      catalogItem[i].classList.toggle('hidden-content');
-      // currentBtn.classList.add('hidden-content');
-    }
-    currentTab.classList.toggle('show');
-  })
-})
-
-// Активный класс тобам
-
-const itemsTab = document.querySelectorAll('.catalog__label');
-itemsTab[0].classList.add('_tab-active');
-
 // Функционал квиза
 
 const quiz = document.querySelector('.quiz-form');

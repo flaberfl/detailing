@@ -1,0 +1,64 @@
+.services {
+
+  /* .services__container */
+  &__container {}
+
+  /* .services__title */
+  &__title {}
+
+  /* .services__items */
+  &__items {}
+
+  /* .services__item */
+  &__item {}
+}
+
+.title-h2 {}
+
+.items-services {}
+
+.item-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* .item-services__image */
+  &__image {
+    padding-top: toRem(20);
+    fill: linear-gradient(111deg, #3145FF -20.25%, #2D9AC9 13.65%, #7530F3 45.5%, #31F3FF 78.37%);
+
+    img {
+      border-radius: 44px;
+      border: 2px solid #3DD1FD;
+
+      // background: linear-gradient(111deg, #3145FF 1.38%, #2D9AC9 35.28%, #7530F3 67.13%, #31F3FF 100%);
+    }
+  }
+
+  /* .item-services__badge */
+  &__badge {
+
+    /* .item-services__badge_1 */
+    &_1 {}
+
+    /* .item-services__badge_2 */
+    &_2 {}
+  }
+
+  /* .item-services__price */
+  &__price {}
+
+  /* .item-services__title */
+  &__title {}
+
+  /* .item-services__subtitle */
+  &__subtitle {}
+
+  /* .item-services__work */
+  &__work {}
+
+  /* .item-services__consultation */
+  &__consultation {}
+
+  /* .item-services__callback */
+  &__callback {}
+}
