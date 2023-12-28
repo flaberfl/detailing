@@ -4,7 +4,9 @@
   &__container {}
 
   /* .services__title */
-  &__title {}
+  &__title {
+    margin-bottom: toRem(90);
+  }
 
   /* .services__items */
   &__items {}
@@ -20,11 +22,31 @@
 .item-services {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: toRem(107);
+  align-items: center;
 
   /* .item-services__image */
   &__image {
+    position: relative;
+    // min-height: toRem(480);
     padding-top: toRem(20);
-    fill: linear-gradient(111deg, #3145FF -20.25%, #2D9AC9 13.65%, #7530F3 45.5%, #31F3FF 78.37%);
+    padding-left: toRem(12);
+    padding-right: toRem(12);
+    padding-bottom: toRem(14);
+    // background-color: red;
+    background: linear-gradient(111deg, #3145FF -20.25%, #2D9AC9 13.65%, #7530F3 45.5%, #31F3FF 78.37%);
+    border-radius: toRem(50);
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #F5F5F5;
+      height: toRem(412);
+      width: 2px;
+      left: 50%;
+      top: 47.2%;
+      transform: translate(-50%, -50%);
+    }
 
     img {
       border-radius: 44px;
@@ -36,22 +58,66 @@
 
   /* .item-services__badge */
   &__badge {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: toRem(25);
+
+    background-color: #00AD90;
+    top: 10%;
+
+
+    color: #141D23;
+
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.8px;
 
     /* .item-services__badge_1 */
-    &_1 {}
+    &_1 {
+      left: 6%;
+
+    }
 
     /* .item-services__badge_2 */
-    &_2 {}
+    &_2 {
+      right: 6%;
+    }
   }
 
   /* .item-services__price */
-  &__price {}
+  &__price {
+    margin-top: toRem(14);
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.8px;
+    }
+  }
 
   /* .item-services__title */
-  &__title {}
+  &__title {
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
 
   /* .item-services__subtitle */
-  &__subtitle {}
+  &__subtitle {
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
 
   /* .item-services__work */
   &__work {}
